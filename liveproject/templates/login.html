@@ -1,0 +1,15 @@
+{% extends 'navbar.html' %}
+
+{% block content %}
+<form action="" method="post">
+    {% csrf_token %}
+    <label for="" class="form-label">Enter Username</label>
+    <input type="text" class="form-control"  name="username">
+    <br><br>
+    <label for="" class="form-label">Password</label>
+    <input type="Password" class="form-control" name="Password">
+    <br><br>
+    <input type="submit">
+</form>
+
+{% endblock %}
